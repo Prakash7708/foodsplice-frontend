@@ -1,38 +1,137 @@
-.App {
+
+.container{
+  background-color: #dbc8b5;
+}
+.frontimg{
+  height: 620px;
+  width: 670px;
+  background-color: #dbc8b5;
+}
+.search{
+  text-transform: lowercase;
+}
+.home{
+  display: grid;
+  place-content: center;
+  background-color: #dbc8b5;
+}
+.search{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.home h1{
+  margin-left: 20px;
+  color: rgb(230, 185, 40);
+}
+
+/* navbar */
+.navbar{
+  background-color: rgb(233, 201, 59);
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+}
+.naveitems{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.naveitemimg{
+  height: 30px;
+  width: 30px;
+}
+.link{
+  color: black;
+  text-decoration: none;
+ 
+}
+.logo{
+  height: 70px;
+  width: 70px;
+}
+
+/* dashboard */
+.items{
+  background-color: rgb(32, 32, 32);
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.pic{
+  margin-top: 30px;
+  height: 230px;
+  width: 300px;
+}
+.hoteldiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* hotel carts */
+
+.hotel{
+  height: 300px;
+  width: 250px;
+  background-color: rgb(207, 207, 209);
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.hotel:hover{
+  height: 305px;
+  width: 255px;
+  box-shadow: 0 0 5px #818181, 0 0 6px hsl(0, 2%, 80%), 0 0 6px #c7c6c6;
+}
+.hotelimg{
+  height: 150px;
+  width: 230px;
+}
+.hotelimg:hover{
+  height: 155px;
+  width: 235px;
+  box-shadow: 0 0 5px #b1afaf, 0 0 6px hsl(0, 1%, 79%), 0 0 6px #b1afaf;
+}
+
+/* hotelhome */
+
+.hoteldetails{
+    background-color: rgb(32, 32, 32);
+    height: 300px;
+}
+.hdimg{
+  height: 230px;
+  width: 300px;
+  display: grid;
+  place-content: center;
+  color: aliceblue;
+}
+.hdimg1{
+  height: 150px;
+  width: 150px;
+  display: grid;
+  place-content: center;
+  color: aliceblue;
+}
+.recom{
+  text-align: end;
+}
+.recom b{
+  color: rgb(228, 193, 36);
+}
+.foods{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+/* admin */
+.createhotel{
+  background-color: rgb(180, 245, 223);
+  height: 550px;
+  width: 680px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.admintable{
+  width: 500px;
+  margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
